@@ -1,9 +1,9 @@
-SELECT
+select
     title
     ,director
     ,release_date
     ,rotten_tomatoes_rating
-FROM {{ ref('stg_movies') }}
-WHERE major_genres = 'Horror'
-ORDER BY rotten_tomatoes_rating DESC
-LIMIT 1
+from {{ ref('stg_movies') }}
+where major_genres = 'Horror'
+order by rotten_tomatoes_rating desc
+limit 1
