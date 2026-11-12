@@ -1,5 +1,5 @@
-SELECT
-    director AS director_name,
-    SUM(worldwide_gross) AS total_revenue
-FROM {{ ref('stg_movies') }}
-GROUP BY 1
+select
+    director as director_name,
+    sum(worldwide_gross) as total_revenue
+from {{ ref('stg_movies') }}
+group by 1
