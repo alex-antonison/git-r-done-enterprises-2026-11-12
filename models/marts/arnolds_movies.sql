@@ -1,5 +1,23 @@
-select * from stg_movies
-where title in(
+SELECT
+    movie_id,
+    title,
+    release_date,
+    us_gross,
+    worldwide_gross,
+    us_dvd_sales,
+    production_budget,
+    mpaa_rating,
+    running_time_min,
+    distributor,
+    source,
+    major_genres,
+    creative_type,
+    director,
+    rotten_tomatoes_rating,
+    imdb_rating,
+    imdb_votes
+FROM stg_movies
+WHERE title IN (
     'Hercules in New York',
     'The Long Goodbye',
     'Stay Hungry',
@@ -45,4 +63,4 @@ where title in(
     'Killing Gunther',
     'Terminator: Dark Fate',
     'Predator: Killer of Killers'
-);
+)
