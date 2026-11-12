@@ -1,4 +1,4 @@
-SELECT
+select
     movie_id,
     title,
     release_date,
@@ -16,8 +16,8 @@ SELECT
     rotten_tomatoes_rating,
     imdb_rating,
     imdb_votes
-FROM stg_movies
-WHERE title IN (
+from stg_movies
+where title in (
     'Hercules in New York',
     'The Long Goodbye',
     'Stay Hungry',
