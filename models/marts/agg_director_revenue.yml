@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: agg_director_revenue
+    description: Worldwide box office revenue aggregated by director.
+    columns:
+      - name: director_name
+        description: Director credited for the movies.
+        data_type: varchar
+      - name: total_revenue
+        description: Sum of worldwide box office gross in USD across all movies by the director.
+        data_type: bigint
